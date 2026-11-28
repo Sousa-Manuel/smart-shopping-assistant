@@ -569,28 +569,6 @@ The paper establishes a promising storage and execution model, but not yet a pro
 
 ---
 
-# Final Five-Minute Flow
-
-## 0:00–0:55
-
-> Existing formats compress well, but heavy decompression does not fit modern SIMD and GPU execution.
-
-## 0:55–2:55
-
-> FastLanes chains simple encodings, reuses relationships between columns, and exposes data in vectors of 1,024 values.
-
-## 2:55–3:55
-
-> On 36 Public BI datasets, FastLanes decoded data approximately 44× faster than Parquet with Zstd while maintaining slightly better compression.
-
-## 3:55–5:00
-
-> The result is convincing at the codec level, but full query-engine benefits remain unproven, and TPC-H shows that performance depends on the workload.
-
-## Closing line
-
-> **FastLanes turns compression from a mandatory decoding step into a representation that the execution engine may be able to use directly.**
-
 ## One-sentence answer to the focus question
 
 Modern analytics needs a new storage format because formats such as Parquet rely on large-block, general-purpose compression that saves space but is expensive to decode, whereas FastLanes combines lightweight encodings into data-parallel compression expressions that retain strong compression while decoding efficiently with SIMD and potentially GPUs.
