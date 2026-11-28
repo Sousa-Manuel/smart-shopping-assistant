@@ -5,17 +5,6 @@
 **DOI:** 10.14778/3749646.3749718  
 **Target duration:** 5 minutes
 
-## Timing
-
-| Slide | Topic                  | Target time |
-| ----- | ---------------------- | ----------: |
-| 1     | Problem and motivation |  55 seconds |
-| 2     | Main idea and method   |   2 minutes |
-| 3     | Experimental evidence  |    1 minute |
-| 4     | Critical assessment    |    1 minute |
-
-> Use only one short quotation per slide. Introduce it as the authors’ statement, then explain it in simpler language.
-
 ---
 
 # Slide 1: Modern analytics needs compression that is cheap to undo
